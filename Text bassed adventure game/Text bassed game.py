@@ -306,6 +306,98 @@ if User_input.casefold().strip() == "yes":
             else:
                 print("Ok no problem .")
 
+        def Naniarchar():
+            print("Welcome to Naniarchar Sadar  .")
+            User_input = input("Do you want to Explore Naniarchar Sub District ? Yes/No:")
+            if User_input == "Yes".strip().casefold():
+                print(""""Nich Choise, Here is a has Lots of place :
+                      1. Pineapple Garden.
+                      2. Birstesto Munsi abdur Memorial.
+                      3. Naniarchar Brige.""")
+                
+                User_input = int(input("Which Place do you want to Explore write serial no :"))
+                if User_input == 1:
+                    print("Welcome to Naniarchar Pineapple Graden. Here is has lots of Gareden . You can explore Anything\n"
+                          "In naniarchar Every mountain is Fineapple garden so just explore.")
+                    User_input = input("Do you Enjoying Exploring Fineapple Garden? Yes/No :")
+                    if User_input == "yes".strip().casefold():
+                        print("Nich Bro. enjoy your moment .")
+                    else:
+                        print("It's ok ")
+
+                elif User_input == 2:
+                    print("Welcome to Brisresto munis adbdhur Roup Memorial. \n"
+                          "You Can explore that memorial.")
+                    User_input = input("Do you want to know about The memorial History ? Yes/No :")
+                    if User_input == "yes".strip().casefold():
+                        print("The memorical Created for 1971 eng for birsresto munsi abodur roup she was Mukti jodda.\n"
+                              "That's why The memorial Created.")
+                        print("Munshi Abdur Rouf was born on 8 May 1943 at Salamatpur village.\n" 
+                              "(renamed Rouf Nagar)[4] under Boalmari thana (currently Madhukhali thana) in Faridpur District.[")
+                        
+                        pass
+                    else:
+                        print("Ok, as your wish .")
+                elif User_input == 3:
+                    print("Welcome to the Naniarchar Brige. The Naniarchar Brige is one of the most Popular place in Naniarchar.\n"
+                          "Here is a has lots of view and leak view.")
+                    User_input = input("Do you want to know about the brige History ? Yes/No :")
+                    if User_input == "yes".strip().casefold():
+                        print("The Naniarchar Brige is Created in 1980. Since 1980 to Right now it's Almost 50 years . it's can created electricity,\n"
+                              "And here is passing bambo for Condrogan to chittagram. the bembo using make like pappers books eveything.")
+                    
+                else:
+                    print("Invalid Input . Please try again .")
+
+            else:
+                print("It's ok no problem")
+        def barkal():
+            print("Welcome to the Barkal Upazila.")
+            User_input = input("Do you want to Explore Barkal Upazila ? Yes/No :")
+            if User_input == "yes".strip().casefold():
+                print("Great Choice, Here is a has lots of place to Explore .")
+                print("""Here is a has lots of place :
+                      1. Barkal Bazar.
+                      2. Barkal Brige.
+                      3. Barkal Park.
+                      4. Subolong Waterfall.""")
+                User_input = int(input("Which Place do you want to Explore just write serial no :"))
+                if User_input == 1:
+                    print("Welcome to the Barkal Bazar. The Barkal Bazar is one of the most Popular place in Barkal.\n"
+                          "Here is a has lots of view and leak view.")
+                    User_input = input("Do you want to know about the bazar History ? Yes/No :")
+                    if User_input == "yes".strip().casefold():
+                        print("The barkal bazar is one of the most popular bazar in Barkal Upazila.\n"
+                              " Here is a has lots of shops and market. The barkal bazar is one of the most popular place in Barkal.\n")
+                        User_input = input("Do you want to know about The barkal bazar products ? Yes/No :")
+                        if User_input == "yes".strip().casefold():
+                            print("The barkal bazar is one of the most popular bazar in Barkal Upazila.\n"
+                                  " Here is a has lots of shops and market. The barkal bazar is one of the most popular place in Barkal.\n"
+                                  "Here is a has lots of products like :\n"
+                                  "1. Jummo Paper.\n"
+                                  "2. Termeric Pouder No Formalin.\n"
+                                  "3. Handcraft Product .\n"
+                                  "4. Sidol.\n"
+                                  "5. Ginger. \n"
+                                  "6. kaptai leak fish.")
+                            User_input = int(input("If you want to know Sepecifiec items just write Products No :"))
+                            if User_input == 1 :
+                                print("The jummo papper is one of the most Popular spices in Barkal Bazar.\n"
+                                      "It's per kilogram 200 Tk .")
+                            elif User_input == 2:
+                                print("The Termeric powder is One of the most Requred Spices in Everyday. it's helps us building masal.\n"
+                                      "")
+                                #Adding Barkal upazila.
+
+                    else:
+                        print("Ok, as your wish .")
+                    
+                else:
+                    print("Invalid Input . Please try again .")
+
+            else:
+                print("It's ok no problem")
+
     class Select_Sub_Distric(Show_Datails):
       
 
@@ -324,6 +416,7 @@ if User_input.casefold().strip() == "yes":
     #show_datalis =Select_Sub_Distric.Baghaichaari()
     show_datalis = Select_Sub_Distric.Kaptai()
     show_datalis = Select_Sub_Distric.kawkali()
+    show_datalis = Select_Sub_Distric.Naniarchar()
             
         
 
