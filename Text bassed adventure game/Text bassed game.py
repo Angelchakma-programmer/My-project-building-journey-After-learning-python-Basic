@@ -386,15 +386,72 @@ if User_input.casefold().strip() == "yes":
                                       "It's per kilogram 200 Tk .")
                             elif User_input == 2:
                                 print("The Termeric powder is One of the most Requred Spices in Everyday. it's helps us building masal.\n"
-                                      "")
+                                      "The termeric making prosses has a lots of hsitory if you want to explore just Dive in thear village.")
                                 #Adding Barkal upazila.
+                            elif  User_input == 3:
+                                print("The handcraft product is one the most usefull here. because the handcarft product made using Bembo,Tree \n"
+                                      "So this is very natureal not Fast type.\n"
+                                      "The handcarft products We use dally life so that's why we can use handcarft products .")
+                                
+                            elif User_input == 4:
+                                print("The Sidol it's local name . it't original name is Nappi. The sidol They use everyday for made food.\n"
+                                      "That's why There requred it.")
+                            elif User_input == 5:
+                                print("The Ginger It's localy called Ada. The Ginger plantation we use jumm land and some land.\n"
+                                      "It's making has many prosse .")
+                                User_input = input("Do you want to know That's prosses ? Yes/No :")
+                                if User_input == "yes".strip().casefold():
+                                    print("Nice one . The ginger makeing lots of prosse. so we expalin first to last .\n"
+                                          "1. Before going to plantaion we have to Sowing .\n "
+                                          "2. Then we have to make land for wowing. \n"
+                                          "3. Then we have to planting.\n"
+                                          "4. After planting we have to wait 3 - 4 month soo this time we have to wait for claim. \n"
+                                          "5. After waiting for we have to sift for Selling. then we have to sell a gain maoney \n"
+                                          "That's is all prosses for only basic . here isn't possible to explain here. so if you want to know just explore bro.")
+                                    
+                                else:
+                                    print("It's ok bro.")
+
+                            elif User_input == 6 :
+                                print("The kaptai leak fish . The local peple fishing here . here has  lots place for fishing Specialy Kattoli leak. and someting.\n "
+                                      "if you want to know all the prosses just you have to explore bro.\n"
+                                      "Soo best wishes to you. enjoy your moment.")
+                
+                        
+                                
+                            
 
                     else:
                         print("Ok, as your wish .")
                     
                 else:
                     print("Invalid Input . Please try again .")
-
+            elif User_input == 2:
+                print("Welcome to barkal brige. The barkal brige I don't have to soo much idea. i can say just explore bro. \n"
+                      "Best wishes to you bro.")
+            elif User_input == 3 :
+                print("Welcome to Barkal Park bro. here is has lots of views for Exploring and Feeligs deeply.\n"
+                      "If you want to know about more you have to just explore bro.\n"
+                      "Best wihses to you bro. Just explore and ejnoy your moment.")
+                
+            elif User_input == 4:
+                print("Hey bro welcome to Subolong walterfall. You can explore bro .")
+                User_input = input("Do you want to Explore Subolong walterfalls ? yes/no :")
+                if User_input == "yes".strip().casefold():
+                    print("Nice one bro.")
+                    print("""Welcome to Subolong park and waterfall
+                          you can Explore this . 
+                          1. Waterfalls .
+                          2. Subolong park.
+                          3. ejnoy Kaptai leak views in subolong. """)
+                    User_input = int(input("Whis you want to explore write just That's palce serial No :"))
+                    if User_input == 1:
+                        print("Nice one bro. And Welcome to Subolong Walterfalls. The walterfalls is one of highest Walterfalls in Rangamati District.\n"
+                              "")
+                        #Adding Subolong walterfalls
+                        
+                else:
+                    print(" It's ok . as your wish.")
             else:
                 print("It's ok no problem")
 
