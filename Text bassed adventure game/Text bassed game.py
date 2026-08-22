@@ -38,17 +38,49 @@ if User_input.casefold().strip() == "yes":
                       3. Chakma Rajbari
                       4. Rangamati Govt Collge
                       5. Aronnok .""")
-                User_input = int(input("Do you want to Know about That Specifice Place Name: "))
-                if User_input == 1:
+                User_input = input("Do you want to Know about That Specifice Place Name: ")
+                if User_input == "1":
                     print("Yes . The Rangamati Hanging Brige One of the most Popular Tourst spot\n"
                           "Here is a Wesome leak views. And ect.")
-                elif User_input == 2:
+                elif User_input == "2":
                     print("Nice chosing . the polwel park is one of the most Popular place in Rangamati Sadar\n"
                           "Here is has a many type of Garden and Stasus and etc .")
-                elif User_input == 3:
+                elif User_input == "3":
                     print("Nice pick, The chakma Rajbari is the History of Chakma Adibashi, and The Chakma indeguneas has a Qune and King\n" \
                     "and etc")
-                elif User_input == 4:
+
+                elif User_input == "4":
+                    print("Welcome To Rangamti Govt college. ")
+                    User_input = input("Do you Want to Know about Rangamti Govt college ? Yes /No :")
+                    if User_input == "yes".strip().casefold():
+                        print("Here is has lot of Deaprtment. here is has HSC Cariculam and Honours And Degree.")
+                        print("""Here is has lot of Department.
+                                           1. Department of physics.
+                                           2. Department of Mathmethcis.
+                                          
+                                           """)
+                        User_input = input("Do you Want to know about That Department . Selcet just serial No:")
+                        if User_input == "1":
+                            print("This The most High Demand Department of Rangamati Govt college. here is Sheet Only 50 . So that's why \n"
+                                  "It's one of the most Demanding Subject in the College.")
+                            print("Here is A has one Students and she is learning programming .")
+                            User_input = input("Do you want to know who is him ? " "yes/ No: ")
+                            if User_input == "yes".strip().casefold():
+                                print("Nice . He is  a Angel Chakma.\n"
+                                      "her Roll no is : 17\n"
+                                      "he's learnign python programming langauage.")
+                            print()
+                        elif User_input == "2":
+                            print("The mathmathics Department is one of the most popular Department of Rangamati Govt college.\n"
+                                  "I have no idea about the department.")
+                        else:
+                            print("invalid Input.")
+
+                           
+                        #Adding Department info of Rangmati Govt college.
+                    else:
+                        print("It's ok bro.")
+                elif User_input == "5":
                     print("greate Choise, The Aronnok Park is a one the most Popular place in Rangmati, that Controled under Bangaladesh \n"
                           "Army . and here is a has view kaptai leak etc.")
                 
@@ -69,8 +101,8 @@ if User_input.casefold().strip() == "yes":
                       3.Sajek Velly.
                       4.Bangaltuli.
                       5.Marissa Vilage.""")
-                User_input = int(input("What's your Choise Place just write this place Serial no: "))
-                if User_input == 1:
+                User_input = input("What's your Choise Place just write this place Serial no: ")
+                if User_input == "1":
                     print("Welcome to latbon , This is a one of the most Popular place is marissa. in summer here is views is very Awesome\n"
                           "Becuse here is a has lots of filde.\n"
                           "And in moonsoon This place look like be a Flote like a mini Cox's Bazar.")
@@ -81,7 +113,7 @@ if User_input.casefold().strip() == "yes":
                         print("Ok sir, staty here and enjoy the Latboon views.")
                     else:
                         print("invaild input .")
-                elif User_input == 2:
+                elif User_input == "2":
                     print("Nice chose. Maji para is the most Popular place in marissa right now. cause here's a has many Hill and Jum land .\n"
                           "And here is has manny Bembo garden,Green Jum land. and Helipate .\n"
                           "here is a many favourit Place in mariisa .")
@@ -90,7 +122,7 @@ if User_input.casefold().strip() == "yes":
                         print("Ok sir you can back, but Come again . welcome sir.see you again.")
                     else:
                         print("Ok sir , Stay here and Enjoy The majipara Peacefull Views .")
-                elif User_input == 3:
+                elif User_input == "3":
                     print("Nice Choise, Wecome to the sajek veally . \n"
                           "The sajek vally is the most popular Tourist place in Bangladesh.\n"
                           "Ok sir you can enjoy the mountain views and lite could .and Enjoy sir . The sajjek velly")
@@ -99,7 +131,7 @@ if User_input.casefold().strip() == "yes":
                         print("Ok Enjoy your Life with the beutifull veiws.")
                     else:
                         print("Ok sir, you can go . and Must be back again.")
-                elif User_input == 4:
+                elif User_input == "4":
                     print("Nice Choise, The Bangatuli Union has a lots of travling plaece. \n")
 
                     print("""Here is has like :
@@ -126,10 +158,15 @@ if User_input.casefold().strip() == "yes":
                         print("As your mine.")
 
                 
-                elif User_input == 5:
+                elif User_input == "5":
                    print("Welcome to the marissa. here is a has a lots of Favourit place.")
                    print("Soo. you have to explore another mariisa place, becuse here isn't possible explain to everything. \n"
                          "If you want to know just Expolore bro.")
+                else:
+                    print("Invalid Input. Try Again.")
+
+            else:
+                print("It's ok no problem.")
         def Kaptai():
             print("Welcome to Kapati Sadar.")
             User_input = input("Do you Want to Explore Kapai Sadar ? Yes/No :")
@@ -140,8 +177,8 @@ if User_input.casefold().strip() == "yes":
                       1.Kaptai Dam
                       2.Kaptai national park.
                       3.Kornopuli River.""")
-                User_input = int(input("Do you want explore any Place jsut write Place Serial No :"))
-                if User_input == 1:
+                User_input = input("Do you want explore any Place jsut write Place Serial No :")
+                if User_input == "1":
                     print("The kaptai Dam is Created in 1960. Since 1960 to Right now it's Almost 50 years . it's can created electricity,\n"
                           "And here is passing bambo for Condrogan to chittagram. the bembo using make like pappers books eveything.")
                     User_input = input("Sir Could you stay here ? Yes/No :")
@@ -149,14 +186,14 @@ if User_input.casefold().strip() == "yes":
                         print("Ok Enjoy your moment and Save it your Albume.")
                     else:
                         print("Ok sir. advance , see you again .")
-                elif User_input == 2:
+                elif User_input == "2":
                     print("The kaptai national park is a has many animal and birds etc. just explore and Enjoy . ")
                     User_input = input("Are you stay here ? Yes/No :")
                     if User_input == "yes".casefold().strip():
                         print("Ok sir you can stay here. here has a many hotel so you Enjoy your moment . Good luck sir.")
                     else:
                         print("Ok sir. see you again. Bye ")
-                elif User_input == 3:
+                elif User_input == "3":
                     print("Welcome to the karnapuli River.")
                     print("here is a has lots of History.")
                     User_input = input("Do you want to Know abuut karnapuli Rivers History and Place ? Yes/No :")
@@ -195,9 +232,9 @@ if User_input.casefold().strip() == "yes":
                 print("""Here is Popular place name :
                       1.Gagra Barar.
                       2.Pahari Chora.""")
-                User_input = int(input("Which plaece Are you want explore just write this serial No :"))
+                User_input = input("Which plaece Are you want explore just write this serial No :")
 
-                if User_input == 1:
+                if User_input == "1":
                     print("Welcome to the Gagra Bazar . the gagra Bazar One of the most Polular market in Kawkali.\n"
                           "Here is a Avalable many type of jummo foods and Vegitable. like Mokke, Sindire, Mamara, and etc."
                           )
@@ -252,7 +289,7 @@ if User_input.casefold().strip() == "yes":
                     else:
                         print("Ok . You can explore another places.")
 
-                elif User_input == 2:
+                elif User_input == "2":
 
                     print("""The pahari chora it's Place located in kawkali in Rangamti.\n"
                         "Here is a has lots of Mind Relaxing place Like :
@@ -294,7 +331,8 @@ if User_input.casefold().strip() == "yes":
                             elif User_input == "No".strip().casefold():
                                 print("Ok, i guees Don't know about this place. best wishes to you. just enjoy the Journey. ")
 
-
+                else:
+                    print("Invlild Input. try again.")
                     
 
                         
@@ -315,8 +353,8 @@ if User_input.casefold().strip() == "yes":
                       2. Birstesto Munsi abdur Memorial.
                       3. Naniarchar Brige.""")
                 
-                User_input = int(input("Which Place do you want to Explore write serial no :"))
-                if User_input == 1:
+                User_input = input("Which Place do you want to Explore write serial no :")
+                if User_input == "1":
                     print("Welcome to Naniarchar Pineapple Graden. Here is has lots of Gareden . You can explore Anything\n"
                           "In naniarchar Every mountain is Fineapple garden so just explore.")
                     User_input = input("Do you Enjoying Exploring Fineapple Garden? Yes/No :")
@@ -325,7 +363,7 @@ if User_input.casefold().strip() == "yes":
                     else:
                         print("It's ok ")
 
-                elif User_input == 2:
+                elif User_input == "2":
                     print("Welcome to Brisresto munis adbdhur Roup Memorial. \n"
                           "You Can explore that memorial.")
                     User_input = input("Do you want to know about The memorial History ? Yes/No :")
@@ -338,7 +376,7 @@ if User_input.casefold().strip() == "yes":
                         pass
                     else:
                         print("Ok, as your wish .")
-                elif User_input == 3:
+                elif User_input == "3":
                     print("Welcome to the Naniarchar Brige. The Naniarchar Brige is one of the most Popular place in Naniarchar.\n"
                           "Here is a has lots of view and leak view.")
                     User_input = input("Do you want to know about the brige History ? Yes/No :")
@@ -361,8 +399,8 @@ if User_input.casefold().strip() == "yes":
                       2. Barkal Brige.
                       3. Barkal Park.
                       4. Subolong Waterfall.""")
-                User_input = int(input("Which Place do you want to Explore just write serial no :"))
-                if User_input == 1:
+                User_input = input("Which Place do you want to Explore just write serial no :")
+                if User_input == "1":
                     print("Welcome to the Barkal Bazar. The Barkal Bazar is one of the most Popular place in Barkal.\n"
                           "Here is a has lots of view and leak view.")
                     User_input = input("Do you want to know about the bazar History ? Yes/No :")
@@ -421,39 +459,191 @@ if User_input.casefold().strip() == "yes":
                                 
                             
 
+                        else:
+                            print("Ok, as your wish .")
+
                     else:
-                        print("Ok, as your wish .")
-                    
-                else:
-                    print("Invalid Input . Please try again .")
-            elif User_input == 2:
-                print("Welcome to barkal brige. The barkal brige I don't have to soo much idea. i can say just explore bro. \n"
-                      "Best wishes to you bro.")
-            elif User_input == 3 :
-                print("Welcome to Barkal Park bro. here is has lots of views for Exploring and Feeligs deeply.\n"
-                      "If you want to know about more you have to just explore bro.\n"
-                      "Best wihses to you bro. Just explore and ejnoy your moment.")
-                
-            elif User_input == 4:
-                print("Hey bro welcome to Subolong walterfall. You can explore bro .")
-                User_input = input("Do you want to Explore Subolong walterfalls ? yes/no :")
-                if User_input == "yes".strip().casefold():
-                    print("Nice one bro.")
-                    print("""Welcome to Subolong park and waterfall
-                          you can Explore this . 
-                          1. Waterfalls .
-                          2. Subolong park.
-                          3. ejnoy Kaptai leak views in subolong. """)
-                    User_input = int(input("Whis you want to explore write just That's palce serial No :"))
-                    if User_input == 1:
-                        print("Nice one bro. And Welcome to Subolong Walterfalls. The walterfalls is one of highest Walterfalls in Rangamati District.\n"
-                              "")
-                        #Adding Subolong walterfalls
+                        print("Invalid Input . Please try again .")
+                elif User_input == "2":
+                    print("Welcome to barkal brige. The barkal brige I don't have to soo much idea. i can say just explore bro. \n"
+                          "Best wishes to you bro.")
+                elif User_input == "3" :
+                    print("Welcome to Barkal Park bro. here is has lots of views for Exploring and Feeligs deeply.\n"
+                          "If you want to know about more you have to just explore bro.\n"
+                          "Best wihses to you bro. Just explore and ejnoy your moment.")
+
+                elif User_input == "4":
+                    print("Hey bro welcome to Subolong walterfall. You can explore bro .")
+                    User_input = input("Do you want to Explore Subolong walterfalls ? yes/no :")
+                    if User_input == "yes".strip().casefold():
+                        print("Nice one bro.")
+                        print("""Welcome to Subolong park and waterfall
+                              you can Explore this . 
+                              1. Waterfalls .
+                              2. Subolong park.
+                              3. ejnoy Kaptai leak views in subolong. """)
+                        User_input = int(input("Whis you want to explore write just That's palce serial No :"))
+                        if User_input == 1:
+                            print("Nice one bro. And Welcome to Subolong Walterfalls. The walterfalls is one of highest Walterfalls in Rangamati District.\n"
+                                  "")
+                            print("The walterfalls is one of the most Popular place in Barkal Upazila. here is a has lots of views and leak views.\n"
+                                  "If you want to know about the walterfalls just explore bro. best wishes to you bro.")
+                            User_input = input("Do you want to stay here ? Yes/No :")
+                            if User_input == "yes".strip().casefold():
+                                print("Ok bro, Enjoy your moment and stay here. and best wishes to you bro. Just enjoy your moment.")
+                            else:
+                                print("Ok bro, you can go. and best wishes to you bro. Just enjoy your moment.")
+
+                        elif User_input == 2:
+                            print("Welcome to the Subolong Park. The subolong park is one of the most Popular place in Barkal Upazila.\n"
+                                  "Here is a has lots of views and leak views.\n"
+                                  "If you want to know about the subolong park just explore bro. best wishes to you bro.")
+                            User_input = input("Do you want to explore the subolong park ? Yes/No :")
+                            if User_input == "yes".strip().casefold():
+                                print("Ok bro, Enjoy your moment and stay here. and best wishes to you bro. Just enjoy your moment.")
+                            else:
+                                print("Ok bro, you can go. and best wishes to you bro. Just enjoy your moment.")
+                        elif User_input == 3:
+                            print("Welcome to the Kaptai leak views in subolong. The Kaptai leak is one of the most Popular place in Barkal Upazila.\n"
+                                  "Here is a has lots of views and leak views.\n"
+                                  "If you want to know about the Kaptai leak just explore bro. best wishes to you bro.")
+                            User_input = input("Do you Wnat to explore Kaptai leak in subolong ? Yes/No :")
+                            if User_input == "yes".strip().casefold():
+                                print("Nich one. The kaptai leak here is localy call Katoli bill. In the kattoli bill you can go direct marissa Baghaichhari.\n"
+                                      "Yes bro Enjoy Explore and enjoy your moment. ")
+                                
+                            else:
+                                print("It's ok")
+                            
+        
                         
+                            #how it's going.
+
+                        else:
+                            print(" It's ok . as your wish.")
+                    else:
+                        print("It's ok no problem") 
                 else:
-                    print(" It's ok . as your wish.")
+                    print("Invaild Input. Try Again.")
+
             else:
-                print("It's ok no problem")
+                print("It's ok As your Wish.")
+
+        def Bilaichari():
+            print("Welcome to Bilaicharri Upazila")
+            User_input = input("Do you Want to Explore Bilaichari Upazila ? Yes/No :")
+            if User_input == "yes".strip().casefold():
+                print("Nich chosie. let't dive in Bilaichari Favourite and Popular place !")
+                print("""Here is has lots of place for Exploring . 
+                      Which place do you want to Explore Just write serial NO :
+                      1. Dhuppani WalterFall.
+                      2. Gaskata Chora Walterfall.
+                      3. Niladri Resort.
+                      4. Digolchari Brige .
+                      5. Local foods.""")
+                User_input = input("Enter Serial no:")
+                if User_input == "1":
+                    print("Nice choise. The Dhuppani Walterfall is one of the most popular in Bilaichari. it's Highet 150 miters.\n"
+                          "While Water Up to down then show White Boll. That's Why it's Call Dhuppani jorna.")
+                    User_input = input("Do you Want to explore more about Dhupani jorana ? yes / No : ")
+                    if User_input == "yes".strip().casefold():
+                        print("""Here is has lots of way to Explore Dhuppani jorna.
+                              1.Explore by bot .
+                              2. Explore by Hill Road.
+                              3. JUngle Rolad + Tracking.""")
+                        User_input = int(input("Which way to want to Explore enter the seriral No:"))
+                        if User_input == 1:
+                            print("Nich choise bro. Right now i don't say anything . Just Explore and Enjoy your moment.\n"
+                                  "And Remember it;s is Adventure way so Be carefull.")
+                        elif User_input == 2:
+                            print("Nice one. i guess you're Brave. So explore bor. Enjoy the hill and mountain views \n"
+                                  "Relaxing your mind. Be Carefull Cauase it's jungle . so ok bro enjoy your momment.")
+                        elif User_input == 3:
+                            print("O bro nice choise. in This Way you have to trecking hill jungle and Excectra. soo Let's dive in. And i don't want to say \n"
+                                  "anything So just explore and Enjoy your life.")
+                        else:
+                            print("Invalid input. try agin man.")
+
+                
+
+                        pass
+                    else:
+                        print("It's ok Bro.")
+
+                elif User_input == "2":
+                        print("Welcome to Gagrachora Walter Fall.")
+                        User_input = input("Do you want to Explore Gagrachora Walter Fall ? Yes/No :")
+                        if User_input == "yes".strip().casefold():
+                            print("Nich choise bro. Right now i don't say anything . Just Explore and Enjoy your moment.\n"
+                                  "And Remember it;s is Adventure way so Be carefull.")
+                        else:
+                            print("It's ok bro. as your wish.")
+                elif User_input == "3":
+                    print("Welcome to Niladri Resort. The Niladri Resort is one of the most Popular place in Bilaichari Upazila.\n"
+                          "Here is a has lots of views and leak views.\n"
+                          "If you want to know about the Niladri Resort just explore bro. best wishes to you bro.")
+                    User_input = input("Do you want to explore the Niladri Resort ? Yes/No :")
+                    if User_input == "yes".strip().casefold():
+                        print("Ok bro, Enjoy your moment and stay here. and best wishes to you bro. Just enjoy your moment.")
+                        print("""In the Niladri Resort here is has lots of services like :
+                              1. Hotel.
+                              2. Restaurant.
+                              3. Swimming Pool.
+                              4. Kaptai leak view.""")
+                        User_input = int(input("Which service do you want to explore just write serial No :"))
+                        if User_input == 1:
+                            print("Welcome to the Niladri Resort Hotel. The Niladri Resort Hotel is one of the most Popular place in Bilaichari Upazila.\n"
+                                  "Here is a has lots of views and leak views.\n"
+                                  "If you want to know about the Niladri Resort Hotel just explore bro. best wishes to you bro.")
+                        elif User_input == 2:
+                            print("Welcome to the Niladri Resort Restaurant. The Niladri Resort Restaurant is one of the most Popular place in Bilaichari Upazila.\n"
+                                  "Here is a has lots of views and leak views.\n"
+                                  "If you want to know about the Niladri Resort Restaurant just explore bro. best wishes to you bro.")
+                        elif User_input == 3:
+                            print("Welcome to the Niladri Resort Swimming Pool. The Niladri Resort Swimming Pool is one of the most Popular place in Bilaichari Upazila.\n"
+                                  "Here is a has lots of views and leak views.\n"
+                                  "If you want to know about the Niladri Resort Swimming Pool just explore bro. best wishes to you bro.")
+                        elif User_input == 4:
+                            print("Welcome to the Niladri Resort Kaptai leak view. The Niladri Resort Kaptai leak view is one of the most Popular place in Bilaichari Upazila.\n"
+                                  "Here is a has lots of views and leak views.\n"
+                                  "If you want to know about the Niladri Resort Kaptai leak view just explore bro. best wishes to you bro.")
+                        else:
+                            print("Invalid input. try again bro.")
+                    else:
+                        print("Ok bro, you can go. and best wishes to you bro. Just enjoy")
+
+                elif User_input == "4":
+                    print("Welcome to Digolchari Brige. The Digolchari Brige is one of the most Popular place in Bilaichari Upazila.\n"
+                        "Here is a has lots of views and leak views.\n"
+                        "If you want to know about the Digolchari Brige just explore bro. best wishes to you bro.")
+                    User_input = input("Do you want to explore the Digolchari Brige ? Yes/No :")
+                    if User_input == "yes".strip().casefold():
+                        print("Ok bro, Enjoy your moment and stay here. and best wishes to you bro. Just enjoy your moment.")
+                    else:
+                        print("Ok bro, you can go. and best wishes to you bro. Just enjoy")
+                            
+                elif User_input == "5":
+                    print("Welcome to Local foods. The Local foods is one of the most Popular place in Bilaichari Upazila.\n"
+                        "Here is a has lots of views and leak views.\n"
+                        "If you want to know about the Local foods just explore bro. best wishes to you bro.")
+                    User_input = input("Do you want to explore the Local foods ? Yes/No :")
+                    if User_input == "yes".strip().casefold():
+                        print("Ok bro, Enjoy your moment and stay here. and best wishes to you bro. Just enjoy your moment.")
+                        user_input = input("Do you want to know about the Local foods ? Yes/No :")
+                        if user_input == "yes".strip().casefold():
+                            print("yep here is a has lots of Local foods . if you wnat to testing just explore bro. best wishes to you bro.")
+
+                        else:
+                         print("Ok bro, you can go. and best wishes to you bro. Just enjoy")
+
+                else:
+
+                    print("Invalid Input. try again.")
+            
+
+            else:
+                print("It's ok As your Wish.")
+            
 
     class Select_Sub_Distric(Show_Datails):
       
@@ -470,17 +660,22 @@ if User_input.casefold().strip() == "yes":
 
        
     a =About_Distric.About_Rangamti_sub_district()
-    #show_datalis =Select_Sub_Distric.Baghaichaari()
-    show_datalis = Select_Sub_Distric.Kaptai()
-    show_datalis = Select_Sub_Distric.kawkali()
-    show_datalis = Select_Sub_Distric.Naniarchar()
-            
+    Show_Datails.Rangamti_sadar()
+    # show_datalis =Select_Sub_Distric.Baghaichaari()
+    # show_datalis = Select_Sub_Distric.Kaptai()
+    # show_datalis = Select_Sub_Distric.kawkali()
+    # show_datalis = Select_Sub_Distric.Naniarchar()
+    # show_datalis = Select_Sub_Distric.barkal()
+    # show_datalis = Select_Sub_Distric.Bilaichari()
+             
         
 
         
 
 else:
     print("The game is Ended")
+
+
 
 
 
