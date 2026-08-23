@@ -142,7 +142,7 @@ if User_input.casefold().strip() == "yes":
                           3. kasalong River.
                           4. Lots of place .""")
                     
-                    User_input == int(input("If you want Explore ,Enter palac serial name : "))
+                    User_input = int(input("If you want Explore ,Enter palac serial name : "))
                     if User_input == 1:
                         print("Nice one, The korengatuli Bazar is a Popular Market, cacuse Here is Many peple come from long way\n"
                               "The Market Open Everyday, but Saterday is Main Opened day. here is a many peple come to the market for \n",
@@ -1142,36 +1142,64 @@ if User_input.casefold().strip() == "yes":
                 print("It's ok As your Wish.")
 
     class Select_Sub_District(Show_Datails):
+            def Exit_game(self):
+                       
+                            User_input = input("Do you want to Exit game ? Yes/No :")
+                            if User_input == "Yes".strip().casefold():
+                                print("The game is Ended.")
+                                exit()
+                            else:
+                                print("It's ok lets play again.")
+            
             def select_sub_sistrict(self):
+               
+                    
+
                 while True:
+                    
+
                     About_Distric.About_Rangamti_sub_district()
 
                     User_input = input("Which Sub District Do you want to Explore Select just Serial No :").strip()
                     if User_input == "1":
                         self.Rangamti_sadar()
-
+                        self.Exit_game()
+                        
                     elif User_input == "2":
+                        
                         self.Baghaichaari()
+                        self.Exit_game()
                     elif User_input == "3":
                         self.Kaptai()
+                        self.Exit_game()
                     elif User_input == "4":
                         self.kawkali()
+                        self.Exit_game()
                     elif User_input == "5":
                         self.barkal()
+                        self.Exit_game()
                     elif User_input == "6":
                         self.Langadu()
+                        self.Exit_game()
                     elif User_input == "7":
                         self.Naniarchar()
+                        self.Exit_game()
                     elif User_input == "8":
                         self.Rajasthali()
+                        self.Exit_game()
                     elif User_input == "9":
                         self.Jurachhari()
+                        self.Exit_game()
                     elif User_input == "10":
                         self.Bilaichari()
+                        self.Exit_game()
+                    else:
+                        print("Invalid input try Again.")
                     
                         
                     
                     if User_input == "11":
+                        print("The game is Ented.")
                         break
                     # else:
                     #     print("invalid input.")
@@ -1182,8 +1210,11 @@ if User_input.casefold().strip() == "yes":
     
        
     # a =About_Distric.About_Rangamti_sub_district()
+    # About_Distric.About_Rangamti_sub_district()
     b = Select_Sub_District()
+    
     b.select_sub_sistrict()
+
     # Show_Datails.Rangamti_sadar()
     # show_datalis =Select_Sub_District.Baghaichaari()
     # show_datalis = Select_Sub_District.Kaptai()

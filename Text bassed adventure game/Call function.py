@@ -22,6 +22,8 @@ class Call_function(Name_of_function):
      elif user_input == 2:
          self.Angel()
 
+
+
 #Finally the problem is solved.
 
     
