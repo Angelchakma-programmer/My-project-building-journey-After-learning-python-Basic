@@ -12,7 +12,7 @@ class Name_of_function:
         print("lolin Chakma")
 
 class Call_function(Name_of_function):
-    def name_of_function(self,):
+    def name_of_function(self):
      print("""Selcet your Are name :
            1.fjfjjfj
            2. fjfjjffjfj""")
