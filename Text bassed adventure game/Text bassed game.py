@@ -15,7 +15,7 @@ if User_input.casefold().strip() == "yes":
             print(""""
                 Welcome to Rangamti Sub District
                   
-                1 : "Rangamti Sadar
+                1 : "Rangamati Sadar
                 2 : "Baghaichhari.
                 3 : "Kaptai.
                 4 : "Kawkhali.
@@ -38,7 +38,9 @@ if User_input.casefold().strip() == "yes":
                       2. Polwel Park
                       3. Chakma Rajbari
                       4. Rangamati Govt Collge
-                      5. Aronnok .""")
+                      5. Aronnok .
+                      """)
+                
                 User_input = input("Do you want to Know about That Specifice Place Name: ")
                 if User_input == "1":
                     print("Yes . The Rangamati Hanging Brige One of the most Popular Tourst spot\n"
@@ -1151,7 +1153,7 @@ if User_input.casefold().strip() == "yes":
                             else:
                                 print("It's ok lets play again.")
             
-            def select_sub_sistrict(self):
+            def select_sub_district(self):
                
                     
 
@@ -1213,7 +1215,7 @@ if User_input.casefold().strip() == "yes":
     # About_Distric.About_Rangamti_sub_district()
     b = Select_Sub_District()
     
-    b.select_sub_sistrict()
+    b.select_sub_district()
 
     # Show_Datails.Rangamti_sadar()
     # show_datalis =Select_Sub_District.Baghaichaari()
