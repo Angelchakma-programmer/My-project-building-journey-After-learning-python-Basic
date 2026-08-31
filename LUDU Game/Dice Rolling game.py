@@ -7,6 +7,7 @@ print("Welcome To our Dice Rolling game.")
 print(f"Your Roll number is : {Roll_number}.")
 
 while True:
+    
     Roll_number = random.randint(1,6)
     
     
@@ -20,6 +21,8 @@ while True:
         break
     else:
         print("Invalid input try again.")
+
+
 
 
 #Finally the game is Completed by Angel Chakma.
