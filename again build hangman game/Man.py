@@ -1,31 +1,35 @@
 
 
+#This is my last time build Hangman Game.
+
+The_Secreat_word = "Phyics"
 Chances = 10
-Secreat_Number = "a"
-Store_Number = []
-Finish_gmae = False
+Finish_Game = False
+Store_Secreat_word = []
 
-while not Finish_gmae:
-    for Numbers in Secreat_Number:
-        if Numbers in Store_Number:
-            print(Numbers, end= " ")
+while not Finish_Game:
+    for Guess_word in The_Secreat_word:
+        if Guess_word.lower() in Store_Secreat_word:
+            print(Guess_word, end= " ")
+            
         else:
-            print("_ ", end= "")
-        
-    Input_number = input(f"Your Chances is : {Chances}. Enter your guess number :")
-    Store_Number.append(Input_number.lower())
-    if Secreat_Number  not in Store_Number:
+            print("_",end= "")
+ 
+    User_Guess = input(f"Your Chances is : {Chances}. Enter your Guess word : " )
+
+    Store_Secreat_word.append(User_Guess)
+    if User_Guess.lower() not in The_Secreat_word :
         Chances -= 1
-        if Chances == 0 :
-            print("Your Chances is out.")
+        if Chances == 0:
+            print(f"Your Chances is Out. try Again !")
             break
-    Finish_gmae = True
-    for Numbers in Secreat_Number:
-        if Numbers not in Store_Number:
-            Finish_gmae = False
 
-if Finish_gmae:
-    print(f"congrats you won the game. the Secreat numbers is : {Secreat_Number}")
+    Finish_Game = True
+    for Guess_word in The_Secreat_word:
+       if Guess_word.lower() not in  Store_Secreat_word:
+           Finish_Game = False
+if Finish_Game:
+    print(f"Congratulations You won the game . ")
+    print(f"The Secreat Word is : {The_Secreat_word}")
 else:
-    print("You lose the game. Please try again.")
-
+    print("You losse The Game.")
