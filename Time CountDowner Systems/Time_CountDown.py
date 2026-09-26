@@ -1,31 +1,38 @@
 
 
-#This project Created by Angel Chakma.
+#Re - building my Time countDown project. and it's me Angel Chakma.
+#thaking time input from users.
+
 import time
-from time import strftime
+Time_inputFrom_users = int(input("Enter your time \n"
+                      "Time Must be Seconds :"))
+Seconds = Time_inputFrom_users
+def Convert_time():
+    Time = Seconds % (24 * 3600)
+    global Hours
+    Hours = Time // 3600
 
-print("Welcome to Time CounDown System!")
-
-# Time_set = input("Enter your Time and Get Set [H:M:S] : ")
-user_time_set = int(input("Enter your Time \n"
-                          "Must be in Second :"))
-
-#time = user_time_set
-times = user_time_set
-sleep_time = -1
-
-while user_time_set != sleep_time:
-    #print("It's me Angel Chakma.....")
-    a = time.sleep(1)
-    print(f'\r Countdown : {user_time_set:02d} s',end= '')
+    Time = Time % 3600
+    global Miniute
+    Miniute = Time // 60
+    Time = Time % 60
+    global second
+    second = Time
     
-    user_time_set -= 1
-    if sleep_time == user_time_set:
-        print(f"\nYour time was :{times}s")
-        print("Time is Excuted !")
+   
+while True:
+    Convert_time()
+    
+    print(f" \r time CountDown is :  {Hours}H: {Miniute}M: {second}s  ", end= " \r")
+    time.sleep(1)
+
+    Seconds -= 1
+    if Time_inputFrom_users == 0:
+        print("Time is Cxcuted !")
         break
 
 
+    
 
 
 
