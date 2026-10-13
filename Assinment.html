@@ -1,0 +1,217 @@
+
+
+Vector calculus answers offline · HTML
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ভেক্টর ক্যালকুলাস – প্রশ্নোত্তর</title>
+<style>
+body{font-family:'Kalpurush','Nirmala UI','Siyam Rupali','Noto Sans Bengali','Vrinda',Arial,sans-serif;line-height:1.9;max-width:860px;margin:0 auto;padding:20px;color:#1d2433;background:#fafaf7}
+h1{text-align:center;color:#12355b;border-bottom:3px solid #12355b;padding-bottom:10px}
+.q{background:#fff;border:1px solid #d9dde5;border-left:5px solid #12355b;border-radius:8px;padding:6px 20px 14px;margin:22px 0}
+.q h2{font-size:1.15rem;color:#12355b;margin:12px 0 6px}
+.def,.thm{background:#eef4fb;border-radius:6px;padding:6px 14px;margin:8px 0}
+.thm{background:#fff6e5}
+.ans{background:#eaf7ee;border-radius:6px;padding:2px 10px;font-weight:bold}
+.eq{text-align:center;margin:8px 0;font-family:'Cambria Math','STIX Two Math','Times New Roman',serif;font-size:1.08em;overflow-x:auto}
+.m{font-family:'Cambria Math','STIX Two Math','Times New Roman',serif;font-size:1.05em;white-space:nowrap}
+b.v,.v{font-weight:bold;font-style:italic;font-family:'Cambria Math','Times New Roman',serif}
+.fr{display:inline-flex;flex-direction:column;text-align:center;vertical-align:middle;margin:0 2px}
+.fr>span:first-child{border-bottom:1px solid #1d2433;padding:0 4px}
+.fr>span:last-child{padding:0 4px}
+table.d{display:inline-table;border-left:2px solid #1d2433;border-right:2px solid #1d2433;border-collapse:separate;border-spacing:6px 0;vertical-align:middle;margin:0 4px}
+table.d td{padding:1px 6px;text-align:center}
+table.t{border-collapse:collapse;width:100%;margin:8px 0}
+table.t th,table.t td{border:1px solid #b9c0cc;padding:6px 10px;vertical-align:top}
+table.t th{background:#e3e9f2}
+svg{max-width:100%;background:#fff;border:1px solid #dde;border-radius:6px}
+@media print{body{background:#fff}.q{break-inside:avoid-page}}
+</style>
+</head>
+<body>
+<h1>ভেক্টর ক্যালকুলাস – প্রশ্নোত্তর</h1>
+<p style="text-align:center;color:#556">নোট: ভেক্টর রাশি মোটা ইটালিক (<b class="v">A</b>) এবং একক ভেক্টর হ্যাট চিহ্নসহ (î, ĵ, k̂, n̂, r̂) লেখা হয়েছে।</p>
+ 
+<div class="q"><h2>১. ভেক্টর ত্রিগুণন কত প্রকার ও কী কী? সংজ্ঞা</h2>
+<p>তিনটি ভেক্টরের মধ্যে ডট ও ক্রস গুণনের মাধ্যমে যে গুণফল পাওয়া যায় তাকে <b>ভেক্টর ত্রিগুণন</b> বলে। এটি <b>দুই প্রকার</b>:</p>
+<div class="def"><b>(i) স্কেলার ত্রিগুণন:</b> <span class="m"><b class="v">A</b> ⋅ (<b class="v">B</b> × <b class="v">C</b>)</span> — ফলাফল একটি স্কেলার রাশি। এর মান <b class="v">A</b>, <b class="v">B</b>, <b class="v">C</b> ধার দ্বারা গঠিত সামান্তরিক ষটফলকের আয়তনের সমান।
+<div class="eq"><b class="v">A</b> ⋅ (<b class="v">B</b> × <b class="v">C</b>) =
+<table class="d"><tr><td>A<sub>x</sub></td><td>A<sub>y</sub></td><td>A<sub>z</sub></td></tr><tr><td>B<sub>x</sub></td><td>B<sub>y</sub></td><td>B<sub>z</sub></td></tr><tr><td>C<sub>x</sub></td><td>C<sub>y</sub></td><td>C<sub>z</sub></td></tr></table></div>
+এবং <span class="m"><b class="v">A</b>⋅(<b class="v">B</b>×<b class="v">C</b>) = <b class="v">B</b>⋅(<b class="v">C</b>×<b class="v">A</b>) = <b class="v">C</b>⋅(<b class="v">A</b>×<b class="v">B</b>)</span> (চক্রীয় বিন্যাসে মান অপরিবর্তিত)।</div>
+<div class="def"><b>(ii) ভেক্টর ত্রিগুণন:</b> <span class="m"><b class="v">A</b> × (<b class="v">B</b> × <b class="v">C</b>)</span> — ফলাফল একটি ভেক্টর, যা <b class="v">B</b> ও <b class="v">C</b> এর তলে অবস্থান করে।
+<div class="eq"><b class="v">A</b> × (<b class="v">B</b> × <b class="v">C</b>) = <b class="v">B</b>(<b class="v">A</b>⋅<b class="v">C</b>) − <b class="v">C</b>(<b class="v">A</b>⋅<b class="v">B</b>)</div></div></div>
+ 
+<div class="q"><h2>২. ক্ষেত্র কাকে বলে? স্কেলার ও ভেক্টর ক্ষেত্রের পার্থক্য</h2>
+<div class="def"><b>ক্ষেত্র:</b> স্থানের কোনো অঞ্চলের প্রতিটি বিন্দুতে যদি কোনো ভৌত রাশির একটি নির্দিষ্ট মান থাকে, তবে সেই অঞ্চলকে ওই রাশির ক্ষেত্র বলে।</div>
+<table class="t">
+<tr><th>বিষয়</th><th>স্কেলার ক্ষেত্র</th><th>ভেক্টর ক্ষেত্র</th></tr>
+<tr><td>সংজ্ঞা</td><td>প্রতিটি বিন্দুতে শুধু মান (স্কেলার রাশি) থাকে</td><td>প্রতিটি বিন্দুতে মান ও দিক (ভেক্টর রাশি) থাকে</td></tr>
+<tr><td>প্রকাশ</td><td class="m">φ(x, y, z)</td><td class="m"><b class="v">A</b>(x,y,z) = A<sub>x</sub>î + A<sub>y</sub>ĵ + A<sub>z</sub>k̂</td></tr>
+<tr><td>উদাহরণ</td><td>তাপমাত্রা, চাপ, বিভব, ঘনত্ব</td><td>বেগ, বল, তড়িৎ ক্ষেত্র, চৌম্বক ক্ষেত্র</td></tr>
+<tr><td>উপাংশ</td><td>একটি ফাংশন</td><td>তিনটি ফাংশন (উপাংশ)</td></tr>
+</table></div>
+ 
+<div class="q"><h2>৩. বিভিন্ন ভেক্টরের চিত্রসহ সংজ্ঞা</h2>
+<svg viewBox="0 0 640 270" width="640" role="img" aria-label="ভেক্টরের চিত্র">
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8z" fill="#12355b"/></marker></defs>
+<g stroke="#12355b" stroke-width="2" fill="none" marker-end="url(#a)">
+<line x1="20" y1="60" x2="70" y2="60"/>
+<line x1="140" y1="40" x2="240" y2="40"/><line x1="140" y1="80" x2="240" y2="80"/>
+<line x1="320" y1="60" x2="420" y2="60"/><line x1="520" y1="60" x2="420" y2="60" transform="translate(110,0)"/>
+<line x1="40" y1="230" x2="150" y2="160"/><line x1="330" y1="230" x2="450" y2="160"/>
+</g>
+<g font-size="13" fill="#1d2433" font-family="sans-serif">
+<text x="20" y="40">একক (মান ১)</text>
+<text x="140" y="25">সমান (A)</text><text x="140" y="102">সমান (B = A)</text>
+<text x="320" y="40">A</text><text x="530" y="40">−A (বিপরীত)</text>
+<text x="40" y="255">অবস্থান ভেক্টর OP</text><text x="330" y="255">সরণ ভেক্টর PQ</text>
+<text x="25" y="212">O</text><text x="152" y="157">P</text><text x="318" y="230">P</text><text x="454" y="157">Q</text>
+</g>
+<circle cx="40" cy="230" r="3" fill="#12355b"/><circle cx="330" cy="230" r="3" fill="#12355b"/>
+</svg>
+<div class="def"><b>একক ভেক্টর:</b> যে ভেক্টরের মান ১ তাকে একক ভেক্টর বলে। <span class="m">Â = <b class="v">A</b> / |<b class="v">A</b>|</span>।</div>
+<div class="def"><b>সমান ভেক্টর:</b> যে দুটি ভেক্টরের মান ও দিক উভয়ই সমান (শুরুর বিন্দু ভিন্ন হলেও) তারা সমান ভেক্টর।</div>
+<div class="def"><b>বিপরীত ভেক্টর:</b> যে দুটি ভেক্টরের মান সমান কিন্তু দিক পরস্পর বিপরীত, তারা বিপরীত ভেক্টর। <b class="v">A</b> এর বিপরীত ভেক্টর −<b class="v">A</b>।</div>
+<div class="def"><b>আয়ত একক ভেক্টর:</b> পরস্পর লম্ব X, Y, Z অক্ষ বরাবর একক ভেক্টর î, ĵ, k̂ কে আয়ত একক ভেক্টর বলে। <span class="m">î⋅ĵ = 0, î⋅î = 1, î × ĵ = k̂</span>।</div>
+<div class="def"><b>অবস্থান ভেক্টর:</b> মূলবিন্দু O থেকে কোনো বিন্দু P(x, y, z) এর অবস্থান যে ভেক্টর দ্বারা প্রকাশ করা হয় তা <span class="m"><b class="v">r</b> = OP = xî + yĵ + zk̂</span>।</div>
+<div class="def"><b>সরণ ভেক্টর:</b> কণা P থেকে Q বিন্দুতে গেলে P থেকে Q পর্যন্ত সরলরেখিক ভেক্টর <span class="m">PQ = <b class="v">r</b><sub>Q</sub> − <b class="v">r</b><sub>P</sub></span> কে সরণ ভেক্টর বলে।</div>
+<div class="def"><b>শূন্য ভেক্টর:</b> যে ভেক্টরের মান শূন্য এবং নির্দিষ্ট কোনো দিক নেই (শুরু ও শেষ বিন্দু একই) তাকে শূন্য ভেক্টর বলে, <b class="v">0</b>। যেমন: <span class="m"><b class="v">A</b> + (−<b class="v">A</b>) = <b class="v">0</b></span>।</div></div>
+ 
+<div class="q"><h2>৪. ভেক্টর ক্যালকুলাস কী ও প্রকারভেদ? চলক, ধ্রুবক, অপারেটর, নাবলা</h2>
+<div class="def"><b>ভেক্টর ক্যালকুলাস:</b> গণিতের যে শাখায় ভেক্টর ও স্কেলার ক্ষেত্রের অন্তরীকরণ ও সমাকলন নিয়ে আলোচনা করা হয় তাকে ভেক্টর ক্যালকুলাস বলে।</div>
+<p><b>প্রকারভেদ:</b> (i) ভেক্টর অন্তরীকরণ — গ্র্যাডিয়েন্ট, ডাইভারজেন্স, কার্ল; (ii) ভেক্টর সমাকলন — রেখা, তল ও আয়তন সমাকলন।</p>
+<div class="def"><b>চলক:</b> যে রাশির মান পরিবর্তিত হয় (যেমন x, y, z, t)।<br>
+<b>ধ্রুবক:</b> যে রাশির মান অপরিবর্তিত থাকে (যেমন π, c, নির্দিষ্ট ভেক্টর)।<br>
+<b>অপারেটর:</b> যে গাণিতিক চিহ্ন কোনো ফাংশনের ওপর ক্রিয়া করে নতুন ফাংশন তৈরি করে (যেমন d/dx)।</div>
+<div class="def"><b>নাবলা (∇):</b> এটি একটি ভেক্টর অন্তরক অপারেটর।
+<div class="eq">∇ = î <span class="fr"><span>∂</span><span>∂x</span></span> + ĵ <span class="fr"><span>∂</span><span>∂y</span></span> + k̂ <span class="fr"><span>∂</span><span>∂z</span></span></div>
+এটি নিজে কোনো রাশি নয়, ক্ষেত্রের ওপর ক্রিয়া করলে অর্থ পায়। ∇φ = গ্র্যাডিয়েন্ট, ∇⋅<b class="v">A</b> = ডাইভারজেন্স, ∇×<b class="v">A</b> = কার্ল।
+ল্যাপ্লাসিয়ান: <span class="m">∇² = ∇⋅∇ = ∂²/∂x² + ∂²/∂y² + ∂²/∂z²</span>।</div></div>
+ 
+<div class="q"><h2>৫. গ্র্যাডিয়েন্ট ও এর ভৌত তাৎপর্য</h2>
+<div class="def"><b>সংজ্ঞা:</b> কোনো স্কেলার ক্ষেত্র φ(x, y, z) এর ওপর ∇ ক্রিয়া করলে যে ভেক্টর পাওয়া যায় তাকে φ এর গ্র্যাডিয়েন্ট বলে।
+<div class="eq">grad φ = ∇φ = î <span class="fr"><span>∂φ</span><span>∂x</span></span> + ĵ <span class="fr"><span>∂φ</span><span>∂y</span></span> + k̂ <span class="fr"><span>∂φ</span><span>∂z</span></span></div></div>
+<p><b>ভৌত তাৎপর্য:</b></p>
+<ol>
+<li>∇φ এর দিক হলো যে দিকে φ এর বৃদ্ধির হার সর্বাধিক।</li>
+<li>এর মান ওই সর্বোচ্চ বৃদ্ধির হারের সমান, অর্থাৎ dφ/dn = |∇φ|।</li>
+<li>কোনো দিক â বরাবর বৃদ্ধির হার (দিকগত অন্তরক) = â ⋅ ∇φ।</li>
+<li>∇φ সমমান তল φ = ধ্রুবক এর অভিলম্ব বরাবর কাজ করে।</li>
+</ol>
+<p>উদাহরণ: তড়িৎ ক্ষেত্র <span class="m"><b class="v">E</b> = −∇V</span>।</p></div>
+ 
+<div class="q"><h2>৬. ডাইভারজেন্স ও এর ভৌত তাৎপর্য</h2>
+<div class="def"><b>সংজ্ঞা:</b> ভেক্টর ক্ষেত্র <b class="v">A</b> = A<sub>x</sub>î + A<sub>y</sub>ĵ + A<sub>z</sub>k̂ এর সাথে ∇ এর ডট গুণফলকে <b class="v">A</b> এর ডাইভারজেন্স বলে।
+<div class="eq">div <b class="v">A</b> = ∇⋅<b class="v">A</b> = <span class="fr"><span>∂A<sub>x</sub></span><span>∂x</span></span> + <span class="fr"><span>∂A<sub>y</sub></span><span>∂y</span></span> + <span class="fr"><span>∂A<sub>z</sub></span><span>∂z</span></span></div></div>
+<p><b>ভৌত তাৎপর্য:</b> ডাইভারজেন্স হলো কোনো বিন্দুর চারপাশে একক আয়তন থেকে নিট বহির্গমন ফ্লাক্স:</p>
+<div class="eq">∇⋅<b class="v">A</b> = lim<sub>ΔV→0</sub> <span class="fr"><span>1</span><span>ΔV</span></span> ∮ <b class="v">A</b>⋅d<b class="v">S</b></div>
+<ul>
+<li>∇⋅<b class="v">A</b> &gt; 0: বিন্দুটি উৎস (source), রেখা বাইরে ছড়াচ্ছে।</li>
+<li>∇⋅<b class="v">A</b> &lt; 0: বিন্দুটি শোষক (sink), রেখা ভেতরে প্রবেশ করছে।</li>
+<li>∇⋅<b class="v">A</b> = 0: ক্ষেত্রটি <b>সোলেনয়েডাল</b>; ভেতরে যা ঢোকে বাইরে তাই বের হয়।</li>
+</ul></div>
+ 
+<div class="q"><h2>৭. কার্ল ও এর ভৌত তাৎপর্য</h2>
+<div class="def"><b>সংজ্ঞা:</b> <b class="v">A</b> এর সাথে ∇ এর ক্রস গুণফলকে কার্ল বলে।
+<div class="eq">curl <b class="v">A</b> = ∇ × <b class="v">A</b> =
+<table class="d"><tr><td>î</td><td>ĵ</td><td>k̂</td></tr><tr><td>∂/∂x</td><td>∂/∂y</td><td>∂/∂z</td></tr><tr><td>A<sub>x</sub></td><td>A<sub>y</sub></td><td>A<sub>z</sub></td></tr></table></div>
+<div class="eq">= î(<span class="fr"><span>∂A<sub>z</sub></span><span>∂y</span></span> − <span class="fr"><span>∂A<sub>y</sub></span><span>∂z</span></span>) + ĵ(<span class="fr"><span>∂A<sub>x</sub></span><span>∂z</span></span> − <span class="fr"><span>∂A<sub>z</sub></span><span>∂x</span></span>) + k̂(<span class="fr"><span>∂A<sub>y</sub></span><span>∂x</span></span> − <span class="fr"><span>∂A<sub>x</sub></span><span>∂y</span></span>)</div></div>
+<p><b>ভৌত তাৎপর্য:</b> কার্ল কোনো বিন্দুর চারপাশে ক্ষেত্রের <b>ঘূর্ণন বা আবর্তনের</b> পরিমাপ। এর দিক ঘূর্ণন অক্ষ বরাবর (ডান হাতের নিয়মে) এবং মান একক ক্ষেত্রফলে সঞ্চালন:</p>
+<div class="eq">(∇×<b class="v">A</b>)⋅n̂ = lim<sub>ΔS→0</sub> <span class="fr"><span>1</span><span>ΔS</span></span> ∮ <b class="v">A</b>⋅d<b class="v">l</b></div>
+<p>∇×<b class="v">A</b> = <b class="v">0</b> হলে ক্ষেত্রটি <b>অঘূর্ণী</b> এবং সংরক্ষণশীল। কঠিন বস্তুর ঘূর্ণনে রৈখিক বেগের কার্ল কৌণিক বেগের দ্বিগুণ (প্রশ্ন ১৩)।</p></div>
+ 
+<div class="q"><h2>৮. গ্রিনের উপপাদ্য (Green's Theorem)</h2>
+<div class="thm"><b>বিবৃতি:</b> xy তলে কোনো সরল বদ্ধ বক্ররেখা C দ্বারা আবদ্ধ ক্ষেত্র R এবং P(x,y), Q(x,y) ও তাদের আংশিক অন্তরকসমূহ R এ সসীম ও অবিচ্ছিন্ন হলে,
+<div class="eq">∮<sub>C</sub> (P dx + Q dy) = ∬<sub>R</sub> ( <span class="fr"><span>∂Q</span><span>∂x</span></span> − <span class="fr"><span>∂P</span><span>∂y</span></span> ) dx dy</div>
+(C কে ঘড়ির কাঁটার বিপরীতে নেওয়া হয়।)</div>
+<p><b>প্রমাণ:</b> ধরি R এমন যে প্রতিটি অক্ষের সমান্তরাল রেখা C কে সর্বোচ্চ দুই বিন্দুতে ছেদ করে।</p>
+<p><b>(i)</b> R কে নিচের বক্র y = f₁(x) ও ওপরের বক্র y = f₂(x), a ≤ x ≤ b দ্বারা আবদ্ধ ধরলে:</p>
+<div class="eq">∬<sub>R</sub> <span class="fr"><span>∂P</span><span>∂y</span></span> dx dy = ∫<sub>a</sub><sup>b</sup> ∫<sub>f₁</sub><sup>f₂</sup> <span class="fr"><span>∂P</span><span>∂y</span></span> dy dx = ∫<sub>a</sub><sup>b</sup> [P(x,f₂) − P(x,f₁)] dx</div>
+<div class="eq">= −∫<sub>a</sub><sup>b</sup> P(x,f₁)dx − ∫<sub>b</sub><sup>a</sup> P(x,f₂)dx = −∮<sub>C</sub> P dx &nbsp;&nbsp;…(১)</div>
+<p><b>(ii)</b> একইভাবে R কে বাম x = g₁(y) ও ডান x = g₂(y), c ≤ y ≤ d দ্বারা আবদ্ধ ধরলে:</p>
+<div class="eq">∬<sub>R</sub> <span class="fr"><span>∂Q</span><span>∂x</span></span> dx dy = ∫<sub>c</sub><sup>d</sup> [Q(g₂,y) − Q(g₁,y)] dy = ∮<sub>C</sub> Q dy &nbsp;&nbsp;…(২)</div>
+<p>(২) থেকে (১) বিয়োগ করে: <span class="m">∮<sub>C</sub>(P dx + Q dy) = ∬<sub>R</sub>(∂Q/∂x − ∂P/∂y) dx dy</span>। <b>(প্রমাণিত)</b></p>
+<p>জটিল অঞ্চলকে সরল অংশে ভাগ করে একই ফল পাওয়া যায়, কারণ অভ্যন্তরীণ সীমানায় রেখা সমাকল পরস্পর কাটাকাটি হয়ে যায়।</p></div>
+ 
+<div class="q"><h2>৯. স্টোকসের উপপাদ্য (Stokes' Theorem)</h2>
+<div class="thm"><b>বিবৃতি:</b> কোনো বদ্ধ বক্ররেখা C দ্বারা সীমাবদ্ধ উন্মুক্ত তল S এর ওপর <b class="v">A</b> এর কার্লের তল সমাকল, C বরাবর <b class="v">A</b> এর রেখা সমাকলের সমান:
+<div class="eq">∮<sub>C</sub> <b class="v">A</b>⋅d<b class="v">l</b> = ∬<sub>S</sub> (∇×<b class="v">A</b>)⋅d<b class="v">S</b> = ∬<sub>S</sub> (∇×<b class="v">A</b>)⋅n̂ dS</div>
+(n̂ এর দিক C এর পরিক্রমণ দিকের সাথে ডান হাতের নিয়মে সঙ্গতিপূর্ণ।)</div>
+<p><b>প্রমাণ:</b> ধরি S তলের সমীকরণ z = f(x,y), xy তলে এর প্রক্ষেপ R এবং সীমানা C′। প্রথমে শুধু A<sub>x</sub>î বিবেচনা করি।</p>
+<p>C এর ওপর A<sub>x</sub>(x,y,z) = A<sub>x</sub>(x,y,f(x,y)) = g(x,y) ধরলে ∮<sub>C</sub> A<sub>x</sub> dx = ∮<sub>C′</sub> g dx। গ্রিনের উপপাদ্য (P = g, Q = 0) থেকে:</p>
+<div class="eq">∮<sub>C′</sub> g dx = −∬<sub>R</sub> <span class="fr"><span>∂g</span><span>∂y</span></span> dx dy, &nbsp;&nbsp; <span class="fr"><span>∂g</span><span>∂y</span></span> = <span class="fr"><span>∂A<sub>x</sub></span><span>∂y</span></span> + <span class="fr"><span>∂A<sub>x</sub></span><span>∂z</span></span> <span class="fr"><span>∂f</span><span>∂y</span></span></div>
+<p>তলের অভিলম্ব n̂ dS = (−f<sub>x</sub> î − f<sub>y</sub> ĵ + k̂) dx dy এবং ∇×(A<sub>x</sub>î) = (∂A<sub>x</sub>/∂z) ĵ − (∂A<sub>x</sub>/∂y) k̂। সুতরাং</p>
+<div class="eq">∬<sub>S</sub> ∇×(A<sub>x</sub>î)⋅n̂ dS = ∬<sub>R</sub> ( −<span class="fr"><span>∂A<sub>x</sub></span><span>∂z</span></span> f<sub>y</sub> − <span class="fr"><span>∂A<sub>x</sub></span><span>∂y</span></span> ) dx dy = −∬<sub>R</sub> <span class="fr"><span>∂g</span><span>∂y</span></span> dx dy</div>
+<p>অতএব ∮<sub>C</sub> A<sub>x</sub> dx = ∬<sub>S</sub> ∇×(A<sub>x</sub>î)⋅n̂ dS।</p>
+<p>অনুরূপভাবে ∮<sub>C</sub> A<sub>y</sub> dy ও ∮<sub>C</sub> A<sub>z</sub> dz এর জন্যও প্রমাণ করা যায়। তিনটি যোগ করলে</p>
+<div class="eq">∮<sub>C</sub> <b class="v">A</b>⋅d<b class="v">l</b> = ∬<sub>S</sub> (∇×<b class="v">A</b>)⋅n̂ dS. &nbsp;<b>(প্রমাণিত)</b></div></div>
+ 
+<div class="q"><h2>১০. গাউসের ডাইভারজেন্স উপপাদ্য</h2>
+<div class="thm"><b>বিবৃতি:</b> কোনো বদ্ধ তল S দ্বারা আবদ্ধ আয়তন V এর ওপর <b class="v">A</b> এর ডাইভারজেন্সের আয়তন সমাকল, ওই বদ্ধ তলের ওপর <b class="v">A</b> এর তল সমাকলের সমান:
+<div class="eq">∯<sub>S</sub> <b class="v">A</b>⋅d<b class="v">S</b> = ∭<sub>V</sub> ∇⋅<b class="v">A</b> dV</div></div>
+<p><b>প্রমাণ:</b> <b class="v">A</b> = A<sub>x</sub>î + A<sub>y</sub>ĵ + A<sub>z</sub>k̂। প্রমাণ করতে হবে:</p>
+<div class="eq">∮<sub>S</sub> (A<sub>x</sub> dS<sub>x</sub> + A<sub>y</sub> dS<sub>y</sub> + A<sub>z</sub> dS<sub>z</sub>) = ∭<sub>V</sub> ( <span class="fr"><span>∂A<sub>x</sub></span><span>∂x</span></span> + <span class="fr"><span>∂A<sub>y</sub></span><span>∂y</span></span> + <span class="fr"><span>∂A<sub>z</sub></span><span>∂z</span></span> ) dV</div>
+<p>ধরি S এমন যে অক্ষের সমান্তরাল যেকোনো রেখা একে সর্বোচ্চ দুই বিন্দুতে ছেদ করে। S এর ওপরের অংশ S₂ : z = f₂(x,y), নিচের অংশ S₁ : z = f₁(x,y), xy তলে প্রক্ষেপ R।</p>
+<div class="eq">∭<sub>V</sub> <span class="fr"><span>∂A<sub>z</sub></span><span>∂z</span></span> dV = ∬<sub>R</sub> ∫<sub>f₁</sub><sup>f₂</sup> <span class="fr"><span>∂A<sub>z</sub></span><span>∂z</span></span> dz dx dy = ∬<sub>R</sub> [A<sub>z</sub>(x,y,f₂) − A<sub>z</sub>(x,y,f₁)] dx dy</div>
+<p>ওপরের তলে k̂⋅n̂ dS = +dx dy এবং নিচের তলে k̂⋅n̂ dS = −dx dy হওয়ায়</p>
+<div class="eq">∬<sub>R</sub> A<sub>z</sub>(x,y,f₂) dx dy = ∬<sub>S₂</sub> A<sub>z</sub>k̂⋅d<b class="v">S</b>, &nbsp;&nbsp; −∬<sub>R</sub> A<sub>z</sub>(x,y,f₁) dx dy = ∬<sub>S₁</sub> A<sub>z</sub>k̂⋅d<b class="v">S</b></div>
+<div class="eq">∴ ∭<sub>V</sub> (∂A<sub>z</sub>/∂z) dV = ∮<sub>S</sub> A<sub>z</sub>k̂⋅d<b class="v">S</b></div>
+<p>একইভাবে ∭ (∂A<sub>x</sub>/∂x) dV = ∮ A<sub>x</sub>î⋅d<b class="v">S</b> এবং ∭ (∂A<sub>y</sub>/∂y) dV = ∮ A<sub>y</sub>ĵ⋅d<b class="v">S</b>। তিনটি যোগ করলে</p>
+<div class="eq">∭<sub>V</sub> ∇⋅<b class="v">A</b> dV = ∯<sub>S</sub> <b class="v">A</b>⋅d<b class="v">S</b>. &nbsp;<b>(প্রমাণিত)</b></div></div>
+ 
+<div class="q"><h2>১১. সামান্তরিক ষটফলকের আয়তন = <b class="v">A</b>⋅(<b class="v">B</b>×<b class="v">C</b>)</h2>
+<p>ধরি ষটফলকের তিনটি সন্নিহিত ধার <b class="v">A</b>, <b class="v">B</b>, <b class="v">C</b>।</p>
+<p>ভূমি হিসেবে <b class="v">B</b> ও <b class="v">C</b> দ্বারা গঠিত সামান্তরিক নিলে এর ক্ষেত্রফল = |<b class="v">B</b>×<b class="v">C</b>|, এবং <b class="v">B</b>×<b class="v">C</b> ভূমির ওপর লম্ব। একক অভিলম্ব n̂ = (<b class="v">B</b>×<b class="v">C</b>) / |<b class="v">B</b>×<b class="v">C</b>|।</p>
+<p>উচ্চতা h = <b class="v">A</b> এর n̂ বরাবর অভিক্ষেপ = |<b class="v">A</b>⋅n̂|।</p>
+<div class="eq">V = ভূমির ক্ষেত্রফল × উচ্চতা = |<b class="v">B</b>×<b class="v">C</b>| ⋅ | <b class="v">A</b>⋅ <span class="fr"><span><b class="v">B</b>×<b class="v">C</b></span><span>|<b class="v">B</b>×<b class="v">C</b>|</span></span> | = | <b class="v">A</b>⋅(<b class="v">B</b>×<b class="v">C</b>) |</div>
+<p>ভেক্টরগুলো ডানহাতি ক্রমে থাকলে <b>V = <b class="v">A</b>⋅(<b class="v">B</b>×<b class="v">C</b>)</b>। (দেখানো হলো)</p></div>
+ 
+<div class="q"><h2>১২. প্রমাণ কর</h2>
+<p><b>(a)</b> সূচক চিহ্নে (ε<sub>ijk</sub> লেভি-চিভিটা চিহ্ন):</p>
+<div class="eq">[∇×(∇×<b class="v">V</b>)]<sub>i</sub> = ε<sub>ijk</sub> ∂<sub>j</sub> ε<sub>klm</sub> ∂<sub>l</sub> V<sub>m</sub> = (δ<sub>il</sub>δ<sub>jm</sub> − δ<sub>im</sub>δ<sub>jl</sub>) ∂<sub>j</sub>∂<sub>l</sub>V<sub>m</sub></div>
+<div class="eq">= ∂<sub>i</sub>(∂<sub>j</sub>V<sub>j</sub>) − ∂<sub>j</sub>∂<sub>j</sub>V<sub>i</sub> = [∇(∇⋅<b class="v">V</b>) − ∇²<b class="v">V</b>]<sub>i</sub></div>
+<div class="eq">∴ ∇×(∇×<b class="v">V</b>) = ∇(∇⋅<b class="v">V</b>) − ∇²<b class="v">V</b></div>
+<p><b>(b)</b> r = √(x²+y²+z²)। শুধু r এর ওপর নির্ভরশীল ফাংশনের জন্য ∇²f = (1/r²) d/dr ( r² df/dr )। f = 1/r হলে df/dr = −1/r², সুতরাং</p>
+<div class="eq">∇²(1/r) = <span class="fr"><span>1</span><span>r²</span></span> <span class="fr"><span>d</span><span>dr</span></span> ( r² ⋅ (−1/r²) ) = <span class="fr"><span>1</span><span>r²</span></span> <span class="fr"><span>d</span><span>dr</span></span>(−1) = 0 &nbsp;&nbsp;(r ≠ 0)</div>
+<p><b>(c)</b> (a) এর সূত্রে <b class="v">V</b> এর জায়গায় <b class="v">A</b> বসালে</p>
+<div class="eq">∇×(∇×<b class="v">A</b>) = ∇(∇⋅<b class="v">A</b>) − ∇²<b class="v">A</b> = −∇²<b class="v">A</b> + ∇(∇⋅<b class="v">A</b>)</div>
+<p><b>(d)</b> ∇f(r) = (df/dr) r̂ (কারণ ∇r = <b class="v">r</b>/r = r̂)। f = 1/r হলে</p>
+<div class="eq">∇(1/r) = −(1/r²) r̂ = −<b class="v">r</b>/r³</div></div>
+ 
+<div class="q"><h2>১৩. <b class="v">v</b> = <b class="v">ω</b> × <b class="v">r</b> হলে</h2>
+<p><b>(a)</b> <b class="v">ω</b> ধ্রুবক ভেক্টর। <b class="v">ω</b> = ω₁î + ω₂ĵ + ω₃k̂, <b class="v">r</b> = xî + yĵ + zk̂।</p>
+<div class="eq"><b class="v">v</b> = <b class="v">ω</b>×<b class="v">r</b> = (ω₂z − ω₃y) î + (ω₃x − ω₁z) ĵ + (ω₁y − ω₂x) k̂</div>
+<div class="eq">∇×<b class="v">v</b> = î(<span class="fr"><span>∂v<sub>z</sub></span><span>∂y</span></span> − <span class="fr"><span>∂v<sub>y</sub></span><span>∂z</span></span>) + ĵ(<span class="fr"><span>∂v<sub>x</sub></span><span>∂z</span></span> − <span class="fr"><span>∂v<sub>z</sub></span><span>∂x</span></span>) + k̂(<span class="fr"><span>∂v<sub>y</sub></span><span>∂x</span></span> − <span class="fr"><span>∂v<sub>x</sub></span><span>∂y</span></span>)</div>
+<div class="eq">= î(ω₁+ω₁) + ĵ(ω₂+ω₂) + k̂(ω₃+ω₃) = 2(ω₁î + ω₂ĵ + ω₃k̂) = 2<b class="v">ω</b></div>
+<p><b>সুতরাং ∇×<b class="v">v</b> = 2<b class="v">ω</b>।</b></p>
+<p><b>(b)</b> (a) থেকে সরাসরি পাওয়া যায়:</p>
+<div class="eq"><b class="v">ω</b> = ½ (∇×<b class="v">v</b>) = ½ curl <b class="v">v</b>. &nbsp;(দেখানো হলো)</div></div>
+ 
+<div class="q"><h2>১৪. <b class="v">A</b>, <b class="v">B</b>, <b class="v">C</b> কি একই তলে অবস্থান করবে?</h2>
+<p>A(3, −4, m), B(2, −1, 1), C(1, 2, −3) বিন্দুগুলোর অবস্থান ভেক্টর <b class="v">A</b>, <b class="v">B</b>, <b class="v">C</b> ধরলে, তিনটি ভেক্টর একই তলে হওয়ার শর্ত: স্কেলার ত্রিগুণন = 0।</p>
+<div class="eq"><b class="v">A</b>⋅(<b class="v">B</b>×<b class="v">C</b>) =
+<table class="d"><tr><td>3</td><td>−4</td><td>m</td></tr><tr><td>2</td><td>−1</td><td>1</td></tr><tr><td>1</td><td>2</td><td>−3</td></tr></table></div>
+<div class="eq">= 3[(−1)(−3) − (1)(2)] + 4[(2)(−3) − (1)(1)] + m[(2)(2) − (−1)(1)]</div>
+<div class="eq">= 3(1) + 4(−7) + m(5) = 5m − 25</div>
+<p>একই তলে হতে হলে 5m − 25 = 0 ⇒ <b>m = 5</b>।</p>
+<p class="ans">উত্তর: ভেক্টর তিনটি একই তলে থাকবে যদি ও কেবল যদি m = 5 হয়। অন্য যেকোনো m এর জন্য (ত্রিগুণন ≠ 0) একই তলে থাকবে না।</p></div>
+ 
+<div class="q"><h2>১৫. <b class="v">F</b> = (y² cos x + z³) î + (2y sin x − 4) ĵ + (3xz² + 2) k̂</h2>
+<p>F<sub>x</sub> = y² cos x + z³, &nbsp;F<sub>y</sub> = 2y sin x − 4, &nbsp;F<sub>z</sub> = 3xz² + 2</p>
+<p><b>(a) সংরক্ষণশীল কি না:</b> সংরক্ষণশীল হতে হলে ∇×<b class="v">F</b> = <b class="v">0</b> হতে হবে।</p>
+<div class="eq">î : ∂F<sub>z</sub>/∂y − ∂F<sub>y</sub>/∂z = 0 − 0 = 0</div>
+<div class="eq">ĵ : ∂F<sub>x</sub>/∂z − ∂F<sub>z</sub>/∂x = 3z² − 3z² = 0</div>
+<div class="eq">k̂ : ∂F<sub>y</sub>/∂x − ∂F<sub>x</sub>/∂y = 2y cos x − 2y cos x = 0</div>
+<p>∴ ∇×<b class="v">F</b> = <b class="v">0</b>। <span class="ans">ক্ষেত্রটি সংরক্ষণশীল।</span> (বিভব φ = y² sin x + xz³ − 4y + 2z)</p>
+<p><b>(b) সোলেনয়েডাল কি না:</b> সোলেনয়েডাল হতে হলে ∇⋅<b class="v">F</b> = 0 হতে হবে।</p>
+<div class="eq">∇⋅<b class="v">F</b> = ∂/∂x (y² cos x + z³) + ∂/∂y (2y sin x − 4) + ∂/∂z (3xz² + 2)</div>
+<div class="eq">= −y² sin x + 2 sin x + 6xz ≠ 0</div>
+<p><span class="ans">ক্ষেত্রটি সোলেনয়েডাল নয়।</span></p></div>
+ 
+<p style="text-align:center;color:#667">— সমাপ্ত —</p>
+</body>
+</html>
+ 
+Claude finished the response

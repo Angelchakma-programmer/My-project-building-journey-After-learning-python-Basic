@@ -2,6 +2,7 @@
 
 
 #This is the latest re building time CountDowner Systems.
+#It's me Angel Chakma..........
 import time
 try:
         
@@ -10,7 +11,6 @@ try:
     if Time_Input <= 0:
         print("Please input the time less then 0.")
     else:
-
 
         Time  = Time_Input
         def Time_Convert(): 
@@ -23,8 +23,6 @@ try:
             global Seconds
             Seconds = All_Seconds % 60
 
-
-            
             #This is convert Seconds to Hours, Miniute,Seconds.
         while True:
             Time_Convert()
@@ -37,7 +35,5 @@ try:
                 
                 break
         
-
-
 except ValueError:
     print("Please Input Valid input....")
