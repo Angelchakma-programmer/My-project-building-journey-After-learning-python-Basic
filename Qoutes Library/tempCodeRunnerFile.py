@@ -1,1 +1,0 @@
-qoutes.motivation()

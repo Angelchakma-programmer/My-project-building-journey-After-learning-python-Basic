@@ -1,13 +1,20 @@
-from List_Qoutes import qoutes
-
+import Qoutes_DB
 import time
-print("Hey, Angel Chakma...👏")
-user_input = input("Enter your Mood :")
-print("Loading.......")
-time.sleep(5)
-print("Be like  water not luxury but valuable For life.....🙂")
+a = Qoutes_DB.Qoutes_Database()
 
-time.sleep(3)
-qoutes.life_lasson()
-time.sleep(3)
-# qoutes.motivation()
+print("Welcome To our Qoutes Library.....🌸")
+
+while True:
+    User_Input = input("Do you Want to Explore Qoutes ? [Y/N] :")
+    if User_Input.strip().casefold() == "y":
+      a.Show_qoutes()
+     
+        
+        
+    elif User_Input.strip().casefold() == "n":
+        print("It ok . Next time  you can try to read some Qoutes..")
+        break
+    else:
+        print("Invalid Input !! Please try Valid input..🌸")
+
+
