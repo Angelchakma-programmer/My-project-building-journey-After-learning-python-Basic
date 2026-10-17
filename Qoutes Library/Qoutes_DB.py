@@ -81,30 +81,32 @@ class Qoutes_Database:
         pass
 
 class Show_Users(Qoutes_Database):
-    # def len_list(self):
-    #     a = len(self.Life_lesson)
-        
 
-    #     Random_Qoutes = random.randint(1,a)
-    #     print(Random_Qoutes)
+    
+    
+    #this method using for checking len of life lesson list..
+    def len_list(self):
+        global Random_Qoutes
+       
+        #print(Random_Qoutes)
+      
 
     
     def Show_qoutes(self):
-        user_inut = input("Enter you Mood :")
+        a = len(self.Life_lesson()[0])
+        #print(a)
+
+        Random_Qoutes = random.randint(1,a)
+        #user_inut = input("Enter you Mood :")
+        
         a = self.Life_lesson()
-        print(life_lesson[0][7])
+        print(f"{"\033[33m"}  {life_lesson[0][Random_Qoutes]}  {"\033[0m"}")
 
 
 
-users = Show_Users()
+# users = Show_Users()
 # users.Show_qoutes()
-# users.len_list()
-
-
-
-
-
-
+#users.len_list()
 
 
 
