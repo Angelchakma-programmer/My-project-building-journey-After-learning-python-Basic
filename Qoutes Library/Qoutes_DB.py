@@ -32,7 +32,7 @@ class Qoutes_Database:
             }
             ]
         return life_lesson
-    def self_improvment():
+    def self_improvment(self):
         Self_Improve_Qoutes = [
             {
                 1 : "Change is Scary, but Change is Growth...",
@@ -42,7 +42,7 @@ class Qoutes_Database:
                 "Remember Everything is Temporary..\n"
                 "So just Move on and Enjoy your Life...🫠",
 
-                4 : " The Buddha  Said \n"
+                4 : " The Buddha Once Said \n"
                 "Nothing is Forever,\n"
                 "Except The Change..✋\n"
                 "\t \t Buddha" ,
@@ -67,7 +67,8 @@ class Qoutes_Database:
     
             }
         ]
-    def Self_Respect():
+        return Self_Improve_Qoutes
+    def Self_Respect(self):
 
         self_respect_qoutes = [
             {
@@ -75,36 +76,69 @@ class Qoutes_Database:
                 "you call it ego.\n"
                 "I call it Self Respect 😏",
                 2 : "Be your own Version \n"
-                "to Smile...🐸"
+                "to Smile...🐸",
+                3 : "Ego is Important but \n"
+                "Self Respect is most Important"
             }
+        
         ]
-        pass
+        return self_respect_qoutes
+        
 
 class Show_Users(Qoutes_Database):
 
-    
-    
     #this method using for checking len of life lesson list..
     def len_list(self):
         global Random_Qoutes
        
         #print(Random_Qoutes)
+    def Dynamic_Qoutes(self):
+        #Dynamic variable
+        All_variabel =  [self.Life_lesson,self.self_improvment,self.Self_Respect]
+        global Random_AllVariable
+        Random_AllVariable = random.choice(All_variabel)#Random variable create
       
-
-    
     def Show_qoutes(self):
-        a = len(self.Life_lesson()[0])
-        #print(a)
+        self.Dynamic_Qoutes()
 
-        Random_Qoutes = random.randint(1,a)
-        #user_inut = input("Enter you Mood :")
+        len_of_LifeLesson = len(self.Life_lesson()[0])
+        len_of_self_improvment = len(self.self_improvment()[0])
+
+        len_of_Self_Respect  = len(self.Self_Respect()[0])
+       
+        len_of_qoutes = len(self.Life_lesson()[0]) #This is len of Life_lesson varable
+        Random_number_life_lesson = random.randint(1,len_of_LifeLesson)
+        Random_number_Self_Respect = random.randint(1,len_of_Self_Respect)
+        random_number_Self_improvment = random.randint(1,len_of_self_improvment)
+    
+        Ask_User = input("\n"
+                         "1. Life Lesson\n"
+                         "2. Self Improvment \n"
+                         "3 .Self Respect\n"
+                         "Enter  The Serial No Which type Qoutes do you Wnat to Read :")
         
-        a = self.Life_lesson()
-        print(f"{"\033[33m"}  {life_lesson[0][Random_Qoutes]}  {"\033[0m"}")
+        Color = "\033[35m"
+        Reset = "\033[0m"
+
+        if Ask_User == "1":
+            Text = self.Life_lesson()[0][Random_number_life_lesson]
+            Qoutes = Text
+            print(Color + Qoutes + Reset)
+        elif Ask_User == "2":
+            Text = self.self_improvment()[0][random_number_Self_improvment]
+            Qoutes = Text
+
+            print(Color + Qoutes + Reset)
+        elif Ask_User == "3":
+            Text = self.Self_Respect()[0][Random_number_Self_Respect]
+            Qoutes = Text
+
+            print(Color + Qoutes + Reset)
+        else:
+            print("Invalid Input.. input Valid input")
 
 
-
-# users = Show_Users()
+      
 # users.Show_qoutes()
 #users.len_list()
 

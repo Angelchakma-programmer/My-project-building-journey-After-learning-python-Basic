@@ -1,0 +1,7 @@
+
+
+name = int("")
+
+
+
+print(name)

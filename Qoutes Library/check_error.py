@@ -1,5 +1,5 @@
 import random
-from Qoutes_DB import Qoutes_Database
+#from Qoutes_DB import Qoutes_Database
 
 # life_lesson = [
 #             {
@@ -28,14 +28,36 @@ from Qoutes_DB import Qoutes_Database
 
 # print(len(life_lesson[0]))
 # print(life_lesson[0][5])
-class Show_Users(Qoutes_Database):
-    def len_list(self):
-        a = len(self.Life_lesson()[0])
-        print(f"This is len of life lesson list : {a}")
+# class Show_Users(Qoutes_Database):
+#     def len_list(self):
+#         a = len(self.Life_lesson()[0])
+#         print(f"This is len of life lesson list : {a}")
         
 
-        Random_Qoutes = random.randint(1,a)
-        print(Random_Qoutes)
+#         Random_Qoutes = random.randint(1,a)
+#         print(Random_Qoutes)
 
-c = Show_Users()
-c.len_list()
+# c = Show_Users()
+# c.len_list()
+#it's working as a list.. but what happpend if it's as a fucntion...
+name = ["Angel Chakma","Lolin Chakma","hahahha Chakma"]
+
+# def Angel_Chakma():
+#     print(" hey it's me Angel Chakma")
+# def Lolin_Chakma():
+#     print("Hey it's me Halakko Chakma..")
+
+# def Unknon_Chakma():
+#     print("It's me Unknon  Chakma..")
+
+
+# All_Function = [Angel_Chakma,Lolin_Chakma,Unknon_Chakma]
+# random_name = random.choice(All_Function)
+# random_name()
+
+color = "\033[34m"
+text = "Hey i'm Angel...."
+reset = "\033[0m"
+
+print(color + text + reset)
+
