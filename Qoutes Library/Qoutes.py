@@ -1,32 +1,39 @@
+
+
 import Qoutes_DB
 import time
-a = Qoutes_DB.Show_Users()
+#Colors
+Blue  = "\033[34m"
+Reset = "\033[0m"
+red = "\033[31m"
+Yellow = "\033[33m"
 
-print("Welcome To our Qoutes Library.....🌸")
+access = Qoutes_DB.prosse
+print(Blue,"Welcome to Qoutes Library !!",Reset)
 
-while True:
-
-    User_Input = input("Do you Want to Explore Qoutes ? [Y/N] :")
-    if User_Input.strip().casefold() == "y":
-        print("Let's dive in...")
-        a.Show_qoutes()
-        while True:
-            
-            User_Input = input("\nNext Qoutes ? [Y/N] :")
-            if User_Input.strip().casefold() == "y":
-                print("Qoutes is loading......")
-                time.sleep(3)
-                # a.Dynamic_Qoutes()
-                a.Show_qoutes()
-                #WE need right now... call different method...
-            else:
+user_input = input(f"{Yellow}{"Do you Want to Read Qoutes ? [Y/N] :"} {Reset}" )
+if user_input.strip().casefold() == "y":
+        
+    Done = False
+    while not Done:
+        access.input()
+    
+        user_input = input(f"{red} {"Quit Library ? [Y/N]"}{Reset}")
+        if user_input.strip().casefold() == "y":
+            Done = True
+            print("Library is Closed !")
+            if Done :
                 break
-        
-    elif User_Input.strip().casefold() == "n":
-        print("It ok . Next time  you can try to read some Qoutes..")
-        break
-        
-    else:  
-        print("Invalid Input !! Please try Valid input..🌸")
 
+        elif user_input.strip().casefold() == "N":
+            continue
+        else:
+            print("Please Enter Vaild input!!")
+            
+elif user_input.strip().casefold() == "n":
+    print("The Library is Clossed !")
+else:
+    print("Invalid input.. try with Valid input..")
+
+    
 

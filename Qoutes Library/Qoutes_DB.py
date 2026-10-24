@@ -1,11 +1,12 @@
 
 import random
+from time import sleep
 
 
 class Qoutes_Database:
 
     def Life_lesson(self):
-        global life_lesson
+       
     
         life_lesson = [
             {
@@ -78,74 +79,95 @@ class Qoutes_Database:
                 2 : "Be your own Version \n"
                 "to Smile...🐸",
                 3 : "Ego is Important but \n"
-                "Self Respect is most Important"
+                "Self Respect is most Important",
+                4 : "Never run back to what broke you"
             }
         
         ]
         return self_respect_qoutes
         
 
-class Show_Users(Qoutes_Database):
 
-    #this method using for checking len of life lesson list..
-    def len_list(self):
-        global Random_Qoutes
-       
-        #print(Random_Qoutes)
-    def Dynamic_Qoutes(self):
-        #Dynamic variable
-        All_variabel =  [self.Life_lesson,self.self_improvment,self.Self_Respect]
-        global Random_AllVariable
-        Random_AllVariable = random.choice(All_variabel)#Random variable create
-      
-    def Show_qoutes(self):
-        self.Dynamic_Qoutes()
-
-        len_of_LifeLesson = len(self.Life_lesson()[0])
-        len_of_self_improvment = len(self.self_improvment()[0])
-
-        len_of_Self_Respect  = len(self.Self_Respect()[0])
-       
-        len_of_qoutes = len(self.Life_lesson()[0]) #This is len of Life_lesson varable
-        Random_number_life_lesson = random.randint(1,len_of_LifeLesson)
-        Random_number_Self_Respect = random.randint(1,len_of_Self_Respect)
-        random_number_Self_improvment = random.randint(1,len_of_self_improvment)
+Color = "\033[33m"
+Reset = "\033[0m"
+Purple = "\033[38;5;93m"
+Qoutes_object = Qoutes_Database()
+#Access all Qoutes len 
+len_of_Life_lesson = len(Qoutes_object.Life_lesson()[0])
+len_of_self_improvment = len(Qoutes_object.self_improvment()[0])
+len_of_self_respect = len(Qoutes_object.Self_Respect()[0])
     
-        Ask_User = input("\n"
-                         "1. Life Lesson\n"
-                         "2. Self Improvment \n"
-                         "3 .Self Respect\n"
-                         "Enter  The Serial No Which type Qoutes do you Wnat to Read :")
-        
-        Color = "\033[35m"
-        Reset = "\033[0m"
+def Run_LIfe_lesson():
+    Random_valueLifeLesson = random.randint(1,len_of_Life_lesson)
+    Qoutes = Qoutes_object.Life_lesson()[0][Random_valueLifeLesson]
+    print(Color + Qoutes + Reset )
+    
 
-        if Ask_User == "1":
-            Text = self.Life_lesson()[0][Random_number_life_lesson]
-            Qoutes = Text
-            print(Color + Qoutes + Reset)
-        elif Ask_User == "2":
-            Text = self.self_improvment()[0][random_number_Self_improvment]
-            Qoutes = Text
+def Run_Self_improvment():
+    Random_value_of_Self_improvment = random.randint(1,len_of_self_respect)
+    Qoutes = Qoutes_object.self_improvment()[0][Random_value_of_Self_improvment]
+    print(Color + Qoutes + Reset)
 
-            print(Color + Qoutes + Reset)
-        elif Ask_User == "3":
-            Text = self.Self_Respect()[0][Random_number_Self_Respect]
-            Qoutes = Text
+def Run_Self_Respect ():
+    Random_Value_Self_Respect = random.randint(1,len_of_self_respect)
+    Qoutes = Qoutes_object.Self_Respect()[0][Random_Value_Self_Respect]
+    print(Color + Qoutes + Reset)
 
-            print(Color + Qoutes + Reset)
-        else:
-            print("Invalid Input.. input Valid input")
+class prosse(Qoutes_Database):
+    def input():
+         Magenta = "\033[35m"
+         global User_Input
+         User_Input = input(f"{Magenta}{"1. Life lesson \n"
+                        "2. Self Improvment \n"
+                        "3. Self Respect \n"
+                        
+                        "Which type Qoutes you Want Please \n"
+                        "Enter Topic Serial :"} {Reset}")
+         
+         if User_Input == "1":
+                while True :
+                    Run_LIfe_lesson()
+                    User_Input = input("Next Qoutes ? [Y/N]:")
+                    if User_Input.strip().casefold() == "y":
+                        print(Purple,"Qoutes is Loading....",Reset)
+                        sleep(3)
+                        continue
+                    elif User_Input.strip().casefold() == "n":
+                        break
+
+                    else:
+                        print("Please Input Valid input")
+                        break
 
 
-      
-# users.Show_qoutes()
-#users.len_list()
+         elif User_Input == "2":
+                 while True :
+                    Run_Self_improvment()
+                    User_Input = input("Next Qoutes ? [Y/N]:")
+                    if User_Input.strip().casefold() == "y":
+                        print(Purple,"Qoutes is Loading....",Reset)
+                        sleep(3)
+                        continue
+                    elif User_Input.strip().casefold() == "n":
+                        break
 
+                    else:
+                        print("Please Input Valid input")
+                        break
+         elif User_Input == "3":
+                 while True :
+                    Run_Self_Respect()
+                    User_Input = input("Next Qoutes ? [Y/N]:")
+                    if User_Input.strip().casefold() == "y":
+                        print(Purple,"Qoutes is Loading....",Reset)
+                        sleep(3)
+                        continue
+                    elif User_Input.strip().casefold() == "n":
+                        break
 
-
-
-
-
-# a = Qoutes_DB()
-# a.Show_qoutes()
+                    else:
+                        print("Please Input Valid input")
+                        break
+         else:
+             print("Please !! Enter Valid input.")
+    
