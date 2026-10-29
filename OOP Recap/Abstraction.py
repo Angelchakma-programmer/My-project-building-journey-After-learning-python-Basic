@@ -26,10 +26,12 @@ class Account:
     def debit(self,Debit):
         self.Balance -= Debit
         print(Debit,"Tk" , "is Debited")
+        print(f"Total Balance is : ",self.Balance)
 
     def Creadit(self,credit):
         self.Balance += credit
         print(credit,"Tk is Creadited ")
+        print("Total Balance is :",self.Balance)
     def Blance(self):
         return self.Balance
 
